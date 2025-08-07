@@ -4,6 +4,9 @@ import 'package:dart_demo/basics/basics.dart';
 void main() {
   declarations();
   concatenate(name: 'Patrick', title: 'Mr');
+  //printWelcome();
+  //printIntroduce();
+  //createProfile("John Doe", role: "Admin", isActive: true, department: "IT");
   //  var demo = DartDemo();
 
   /*

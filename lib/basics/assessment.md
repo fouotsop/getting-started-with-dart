@@ -1,7 +1,7 @@
 # Bases du langage de programmation Dart
 
 PATRICK FOUOTSOP FOSSO  
-patrickfosso49@gmail.com  
+patrick.fouotsop@facsciences-uy1.cm  
 Août 2025  
 
 ## 1 Types de données en Dart
