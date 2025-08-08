@@ -44,7 +44,7 @@
 
 ---
 
-## 4. 🚀 Concepts Avancés
+## 4. Concepts Avancés
 
 1. **Générateur de mot de passe:**
    Écrivez une fonction qui génère un mot de passe aléatoire de longueur donnée. Utilisez des caractères alphanumériques et des symboles.
