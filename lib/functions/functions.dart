@@ -8,8 +8,8 @@ void printFarewell(String name) {
 }
 
 //named function with positional parameters
-int add(int a, int b) {
-  return a + b;
+int substract({int a = 0, int b = 0}) {
+  return a - b;
 }
 
 // named function with named optional parameters
@@ -54,4 +54,8 @@ void example() {
   var numbers = [1, 2, 3, 4, 5];
   var doubled = numbers.map((number) => number * 2).toList();
   print(doubled); // [2, 4, 6, 8, 10]
+}
+
+int namedSubtract({int first = 0, int second = 0}) {
+  return first - second;
 }

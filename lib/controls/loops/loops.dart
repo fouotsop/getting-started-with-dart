@@ -26,19 +26,19 @@ int sumUpToDoWhile(int n) {
   return sum;
 }
 
-void doSomethingPerCase(int n) {
+void dosomethingpercase(int n) {
   switch (n) {
     case 1:
-      print('One');
+      print('one');
       break;
     case 2:
-      print('Two');
+      print('two');
       break;
     case 3:
-      print('Three');
+      print('three');
       break;
     default:
-      print('Other number');
+      print('other number');
   }
 }
 
