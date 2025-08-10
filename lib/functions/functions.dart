@@ -59,3 +59,23 @@ void example() {
 int namedSubtract({int first = 0, int second = 0}) {
   return first - second;
 }
+
+void toto({required String nom}) {
+  print("bonjour $nom");
+}
+
+double add(double a, double b) => a + b;
+
+bool isEven(int number) => number % 2 == 0;
+
+double aireCercle({required double rayon}) {
+  return 3.14 * rayon * rayon;
+}
+
+double aireRectangle({required double longueur, required double largeur}) {
+  return longueur * largeur;
+}
+
+double aireTriangle({required double base, required double hauteur}) {
+  return 0.5 * base * hauteur;
+}

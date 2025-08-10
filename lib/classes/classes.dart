@@ -14,6 +14,29 @@ class Car {
   }
 }
 
+class Lorry extends Car {
+  double _loadCapacity = 0.0;
+
+  Lorry({
+    required super.make,
+    required super.model,
+    required super.year,
+    required double loadCapacity,
+  }) {
+    _loadCapacity = loadCapacity;
+  }
+
+  double get loadCapacity => _loadCapacity; // Getter for load capacity
+
+  set loadCapacity(double value) {
+    if (value >= 0) {
+      _loadCapacity = value;
+    } else {
+      throw ArgumentError('Load capacity cannot be negative');
+    }
+  }
+}
+
 class Person {
   String name;
   int age;

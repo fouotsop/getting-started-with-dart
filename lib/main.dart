@@ -3,11 +3,25 @@
 import 'package:dart_demo/functions/functions.dart';
 
 void main() {
-  printIntroduce();
+  toto(nom: "Alex");
 
-  //printWelcome();
-  createProfile("John Doe", role: "Admin", isActive: true, department: "IT");
+  print(add(3.14, 1.0));
+  print(isEven(4));
+  print(aireCercle(rayon: 5.0));
+  print(aireRectangle(longueur: 10.0, largeur: 5.0));
+  print(aireTriangle(base: 8.0, hauteur: 4.0));
 
+  List<int?> numbers;
+
+  int Function(int) square = (n) => n * n;
+
+  square(5); // 25
+
+  mul(a, b) => a * b;
+  mul(3, 4); // 12.0
+
+  square = (n) => n * n * n;
+  square(3); // 27
   //printIntroduce();
   //createProfile("John Doe", role: "Admin", isActive: true, department: "IT");
   //  var demo = DartDemo();
