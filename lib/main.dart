@@ -1,27 +1,34 @@
 //import 'basics/basics.dart';
 
-import 'package:dart_demo/functions/functions.dart';
+class Vehicule {
+  String marque;
+  String modele;
+  int annee;
+
+  Vehicule({required this.marque, required this.modele, required this.annee});
+
+  void afficherDetails() {
+    print('Marque: $marque, Modèle: $modele, Année: $annee');
+  }
+}
+
+class Voiture extends Vehicule {
+  Voiture({required super.marque, required super.modele, required super.annee});
+}
 
 void main() {
-  toto(nom: "Alex");
+  Vehicule monVehicule = Vehicule(
+    marque: 'Toyota',
+    modele: 'Corolla',
+    annee: 2020,
+  );
+  monVehicule.afficherDetails(); // Affiche les détails du véhicule
 
-  print(add(3.14, 1.0));
-  print(isEven(4));
-  print(aireCercle(rayon: 5.0));
-  print(aireRectangle(longueur: 10.0, largeur: 5.0));
-  print(aireTriangle(base: 8.0, hauteur: 4.0));
+  Voiture maVoiture = Voiture(marque: 'Honda', modele: 'Civic', annee: 2021);
+  maVoiture.afficherDetails(); // Affiche les détails de la voiture
 
-  List<int?> numbers;
+  // creation d'une voiture
 
-  int Function(int) square = (n) => n * n;
-
-  square(5); // 25
-
-  mul(a, b) => a * b;
-  mul(3, 4); // 12.0
-
-  square = (n) => n * n * n;
-  square(3); // 27
   //printIntroduce();
   //createProfile("John Doe", role: "Admin", isActive: true, department: "IT");
   //  var demo = DartDemo();
