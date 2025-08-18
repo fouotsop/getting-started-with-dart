@@ -1,5 +1,7 @@
 //import 'basics/basics.dart';
 
+import 'package:dart_demo/classes/classes.dart';
+
 class Vehicule {
   String marque;
   String modele;
@@ -17,7 +19,17 @@ class Voiture extends Vehicule {
 }
 
 void main() {
-  Vehicule monVehicule = Vehicule(
+  Triangle triangle = Triangle(5.0, 10.0);
+  print('Aire du triangle: ${triangle.calculAire()}');
+
+  triangle.base = 100;
+
+  print(
+    'Aire du triangle après modification de la base: ${triangle.calculAire()}',
+  );
+
+  /*Vehicule monVehicule = Vehicule(
+
     marque: 'Toyota',
     modele: 'Corolla',
     annee: 2020,
@@ -27,6 +39,7 @@ void main() {
   Voiture maVoiture = Voiture(marque: 'Honda', modele: 'Civic', annee: 2021);
   maVoiture.afficherDetails(); // Affiche les détails de la voiture
 
+*/
   // creation d'une voiture
 
   //printIntroduce();
